@@ -37,6 +37,7 @@
   as well that the value of const cannot change in our for loop.
 </h1>; */
 }
+// --------------------------------------------------------------------------------------------
 // -----------Snippet 2 - Reassign values---------------
 // // var
 // var test = 1;
@@ -60,6 +61,7 @@
 // test = 2;
 // console.log(test); // TypeError: invalid assignment to const `test'
 // This example shows us that the value of const can’t be reassigned.
+// --------------------------------------------------------------------------------------------
 // --------------Snippet 3 - Redeclare variable-------------
 // var
 // var test = 1;
@@ -83,6 +85,7 @@
 // const test = 2;
 // console.log(test);
 // // Both let and const can’t be redeclare
+// --------------------------------------------------------------------------------------------
 // -------------Snippet 4 - Scope------------------
 // var
 // var test = 1;
@@ -112,6 +115,7 @@
 // }
 // console.log(test); // 1
 // The above examples, show us that using let and const can reuse in another scope.
+// --------------------------------------------------------------------------------------------
 // ---------------Snippet 5 - Object------------------
 // var
 // var obj = {
@@ -147,7 +151,7 @@
 // obj.test1 = 10;
 // console.log(obj); // { test1: 10, test2: 2 }
 // This last example shows us that with const we can mutate properties in our variable.
-
+// --------------------------------------------------------------------------------------------
 // ----------hoisting--------
 // The process of shifting the declaration of variables, functions,
 // and classes to the top of their scope before the execution of code is called hoisting
@@ -184,3 +188,4 @@
 // let a = 20;
 // console.log(a);
 // The TDZ is a good thing because it helps to highlight bugs—accessing a value before it has been declared is rarely intentional.
+// --------------------------------------------------------------------------------------------
