@@ -11,3 +11,4 @@
 9. Promise
 10. Destructuring
 11. SpreadOperator
+12. Sync vs Async
