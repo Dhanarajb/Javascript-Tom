@@ -7,3 +7,4 @@
 5. Find and findIndex
 6. Classes
 7. LexicalScope&Closure
+8. RestParameter
