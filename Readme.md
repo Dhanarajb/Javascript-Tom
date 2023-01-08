@@ -10,3 +10,4 @@
 8. RestParameter
 9. Promise
 10. Destructuring
+11. SpreadOperator
