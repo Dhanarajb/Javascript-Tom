@@ -8,3 +8,4 @@
 6. Classes
 7. LexicalScope&Closure
 8. RestParameter
+9. Promise
