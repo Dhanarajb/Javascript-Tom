@@ -18,3 +18,4 @@
 16. Value&Reference
 17. == & ===
 18. Expression and Statement
+19. Call Bind apply
