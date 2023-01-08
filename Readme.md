@@ -9,3 +9,4 @@
 7. LexicalScope&Closure
 8. RestParameter
 9. Promise
+10. Destructuring
