@@ -19,3 +19,4 @@
 17. == & ===
 18. Expression and Statement
 19. Call Bind apply
+20. Currying
