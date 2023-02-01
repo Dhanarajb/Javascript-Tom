@@ -6,30 +6,30 @@
 </h1>; */
 }
 // -----------Snippet 1 - for loop----------
-// var
-// console.log(i); // undefined
-// for (var i = 0; i < 3; i++) {
-//   console.log(i); // 0; 1; 2
-// }
-// console.log(i); // 3
+var
+console.log(i); // undefined
+for (var i = 0; i < 3; i++) {
+  console.log(i); // 0; 1; 2
+}
+console.log(i); // 3
 
 //-----------------
 
-// let
-// console.log(i); // ReferenceError: i is not defined
-// for (let i = 0; i < 3; i++) {
-//   console.log(i); // 0; 1; 2
-// }
-// console.log(i); // ReferenceError: i is not defined
+let
+console.log(i); // ReferenceError: i is not defined
+for (let i = 0; i < 3; i++) {
+  console.log(i); // 0; 1; 2
+}
+console.log(i); // ReferenceError: i is not defined
 
 //   //-----------------
 
-//   // const
-//   // console.log(i); // ReferenceError: i is not defined
-// for (const i = 0; i < 3; i++) {
-//   console.log(i); // 0; ReferenceError: i is not defined
-// }
-// console.log(i);
+  // const
+  console.log(i); // ReferenceError: i is not defined
+for (const i = 0; i < 3; i++) {
+  console.log(i); // 0; ReferenceError: i is not defined
+}
+console.log(i);
 {
   /* <h1>
   This first code snippet shows us that const and let are scoped at a block
@@ -39,117 +39,117 @@
 }
 // --------------------------------------------------------------------------------------------
 // -----------Snippet 2 - Reassign values---------------
-// // var
-// var test = 1;
-// console.log(test); // 1
-// test = 2;
-// console.log(test); // 2
+// var
+var test = 1;
+console.log(test); // 1
+test = 2;
+console.log(test); // 2
 
 // //-----------------
 
 // // let
-// let test = 1;
-// console.log(test); // 1
-// test = 2;
-// console.log(test); // 2
+let test = 1;
+console.log(test); // 1
+test = 2;
+console.log(test); // 2
 
 // //-----------------
 
 // // const
-// const test = 1;
-// console.log(test); // 1
-// test = 2;
-// console.log(test); // TypeError: invalid assignment to const `test'
+const test = 1;
+console.log(test); // 1
+test = 2;
+console.log(test); // TypeError: invalid assignment to const `test'
 // This example shows us that the value of const can’t be reassigned.
 // --------------------------------------------------------------------------------------------
 // --------------Snippet 3 - Redeclare variable-------------
 // var
-// var test = 1;
-// console.log(test); // 1
-// var test = 2;
-// console.log(test); // 2
+var test = 1;
+console.log(test); // 1
+var test = 2;
+console.log(test); // 2
 
 // //-----------------
 
 // // let
-// let test = 1;
-// console.log(test); // SyntaxError: redeclaration of let test
-// let test = 2;
-// console.log(test);
+let test = 1;
+console.log(test); // SyntaxError: redeclaration of let test
+let test = 2;
+console.log(test);
 
 // //-----------------
 
 // // const
-// const test = 1;
-// console.log(test); // SyntaxError: redeclaration of const test
-// const test = 2;
-// console.log(test);
+const test = 1;
+console.log(test); // SyntaxError: redeclaration of const test
+const test = 2;
+console.log(test);
 // // Both let and const can’t be redeclare
 // --------------------------------------------------------------------------------------------
 // -------------Snippet 4 - Scope------------------
 // var
-// var test = 1;
-// function testFunction() {
-//   var test = 2;
-//   console.log(test); // 2
-// }
-// console.log(test); // 1
+var test = 1;
+function testFunction() {
+  var test = 2;
+  console.log(test); // 2
+}
+console.log(test); // 1
 
 // //-----------------
 
 // // let
-// let test = 1;
-// if (test > 0) {
-//   let test = 2;
-//   console.log(test); // 2
-// }
-// console.log(test); // 1
+let test = 1;
+if (test > 0) {
+  let test = 2;
+  console.log(test); // 2
+}
+console.log(test); // 1
 
 // //-----------------
 
 // // const
-// const test = 1;
-// if (test > 0) {
-//   const test = 2;
-//   console.log(test); // 2
-// }
-// console.log(test); // 1
+const test = 1;
+if (test > 0) {
+  const test = 2;
+  console.log(test); // 2
+}
+console.log(test); // 1
 // The above examples, show us that using let and const can reuse in another scope.
 // --------------------------------------------------------------------------------------------
 // ---------------Snippet 5 - Object------------------
 // var
-// var obj = {
-//   test1: 1,
-//   test2: 2,
-// };
-// // obj = {test: 0};
-// // console.log(obj); // { test: 0 }
-// obj.test1 = 10;
-// console.log(obj); // { test1: 10, test2: 2 }
+var obj = {
+  test1: 1,
+  test2: 2,
+};
+obj = {test: 0};
+console.log(obj); // { test: 0 }
+obj.test1 = 10;
+console.log(obj); // { test1: 10, test2: 2 }
 
 //-----------------
 
 // let
-// let obj = {
-//   test1: 1,
-//   test2: 2,
-// };
-// // obj = {test: 0};
-// // console.log(obj); // { test: 0 }
-// obj.test1 = 10;
-// console.log(obj); // { test1: 10, test2: 2 }
+let obj = {
+  test1: 1,
+  test2: 2,
+};
+// obj = {test: 0};
+// console.log(obj); // { test: 0 }
+obj.test1 = 10;
+console.log(obj); // { test1: 10, test2: 2 }
 
 // //-----------------
 
 // // const
-// const obj = {
-//   test1: 1,
-//   test2: 2,
-// };
-// // obj = {test: 0};
-// // console.log(obj); // invalid assignment to const `obj'
-// obj.test1 = 10;
-// console.log(obj); // { test1: 10, test2: 2 }
+const obj = {
+  test1: 1,
+  test2: 2,
+};
+// obj = {test: 0};
+// console.log(obj); // invalid assignment to const `obj'
+obj.test1 = 10;
+console.log(obj); // { test1: 10, test2: 2 }
 // This last example shows us that with const we can mutate properties in our variable.
 // --------------------------------------------------------------------------------------------
 // ----------hoisting--------
