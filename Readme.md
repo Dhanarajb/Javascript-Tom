@@ -1,7 +1,7 @@
 # Concepts
 
 1. Var let Const
-2. Arraow function
+2. Arrow function
 3. Default Parameter
 4. Template String
 5. Find and findIndex
