@@ -42,3 +42,39 @@ dev2.skills.primary = "front end";
 
 console.log(dev1);
 console.log(dev2);
+//--------------------------------------------------
+// Original object
+const originalObject = {
+  name: 'John',
+  age: 30,
+  address: {
+    street: '123 Main St',
+    city: 'Example City',
+    country: 'Example Country'
+  },
+  family: ['Alice', 'Bob'],
+};
+
+// Shallow copy using the spread operator
+const shallowCopy = { ...originalObject };
+
+// Shallow copy using Object.assign()
+const shallowCopy2 = Object.assign({}, originalObject);
+
+// Deep copy using JSON.parse() and JSON.stringify()
+const deepCopy = JSON.parse(JSON.stringify(originalObject));
+
+// Modifying the copied objects
+shallowCopy.name = 'Jane';
+shallowCopy2.age = 35;
+shallowCopy2.family = 'Dhanu';
+shallowCopy2.address.country = 'india';
+deepCopy.address.city = 'New City';
+
+// Output
+console.log(originalObject);
+console.log(shallowCopy);
+console.log(shallowCopy2);
+console.log(shallowCopy2);
+console.log(deepCopy);
+
